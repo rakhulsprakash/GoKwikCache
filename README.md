@@ -26,6 +26,6 @@ Other pointers:
 
 ## THINGS TO IMPROVE
 
-Exception handling with various error types could be added (Factory method to create different error message based on error codes)
-Unit Testing (A comprehensive test suite for testing various use cases)
-Other functionalities of classes such as LinkedLists' removeFromTail is yet to be implemented.
+- Exception handling with various error types could be added (Factory method to create different error message based on error codes)
+- Unit Testing (A comprehensive test suite for testing various use cases)
+- Other functionalities of classes such as LinkedLists' removeFromTail is yet to be implemented.

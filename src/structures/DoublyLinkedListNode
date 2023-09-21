@@ -1,0 +1,11 @@
+class DoublyLinkedListNode {
+
+    constructor(data = null) {
+        this.data = data;
+        this.previous = null;
+        this.next = null;
+    }
+
+}
+
+module.exports = DoublyLinkedListNode;

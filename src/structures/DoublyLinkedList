@@ -1,0 +1,64 @@
+class DoublyLinkedList {
+
+    constructor() {
+        this.head = null;
+        this.tail = null;
+    }
+
+    addTail(node) {
+
+        node.next = null;
+
+        if (this.tail == null) {
+
+            this.tail = node;
+            this.head = node;
+
+        } else {
+
+            node.previous = this.tail;
+            this.tail.next = node;
+            this.tail = node;
+
+        }
+
+    }
+
+    removeHead() {
+
+        if (this.head == null ||
+            this.head.next == null) {
+
+            this.head = null;
+            this.tail = null;
+        } else {
+
+            this.head = this.head.next;
+            this.head.previous = null;
+
+        }
+    }
+
+    remove(node) {
+
+        if (node == this.head) {
+
+            this.removeHead();
+
+        } else if (node == this.tail) {
+
+            this.tail = node.previous;
+            this.tail.next = null;
+
+        } else {
+
+            node.next.previous = node.previous;
+            node.previous.next = node.next;
+
+        }
+    }
+
+    //TODO: removeTail, addHead etc.. (Out of scope for the problem)
+}
+
+module.exports = DoublyLinkedList;

@@ -1,4 +1,4 @@
-const MapStorage = require("../storage/MapStorage");
+const SetStorage = require("../storage/SetStorage");
 const EvictionStrategy = require("../eviction_strategies/EvictionStrategy");
 const LRUEvictionStrategy = require("../eviction_strategies/LRUEvictionStrategy");
 const Cache = require("../Cache")
@@ -22,7 +22,7 @@ class CacheFactory {
 
         // if (strategy == CacheFactory.STRATEGY.MRU) return new Cache(new Storage(capacity, new EvictionStrategy()));
 
-        if (strategy == CacheFactory.STRATEGY.LRU) return new Cache(new MapStorage(capacity), new LRUEvictionStrategy());
+        if (strategy == CacheFactory.STRATEGY.LRU) return new Cache(new SetStorage(capacity), new LRUEvictionStrategy());
     }
 }
 

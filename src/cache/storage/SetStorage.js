@@ -1,6 +1,6 @@
 const Storage = require("./Storage");
 
-class MapStorage extends Storage {
+class SetStorage extends Storage {
 
     constructor(capacity) {
         super(capacity);
@@ -34,4 +34,4 @@ class MapStorage extends Storage {
     }
 }
 
-module.exports = MapStorage;
+module.exports = SetStorage;

@@ -1,0 +1,20 @@
+{
+  "name": "cache",
+  "version": "1.0.0",
+  "description": "A Low Level Design of a Cache that runs on LRU Strategy, but can accept other Eviction Strategies as well",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rakhulsprakash/GoKwikCache.git"
+  },
+  "author": "Rakhul S Prakash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rakhulsprakash/GoKwikCache/issues"
+  },
+  "homepage": "https://github.com/rakhulsprakash/GoKwikCache#readme"
+}
